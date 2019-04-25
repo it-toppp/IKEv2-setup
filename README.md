@@ -59,11 +59,9 @@ Configuration files, scripts and instructions are sent by email. They are also d
        ssh root@myvpn.example.net  # log back in to the server for the next step ...
 
 4. On your new server installation, become `root`, download the script, give it execute permissions, and run it:
-
-       wget https://raw.githubusercontent.com/jawj/IKEv2-setup/master/setup.sh
-       chmod u+x setup.sh
-       ./setup.sh
-    
+```
+       wget https://raw.githubusercontent.com/jawj/IKEv2-setup/master/setup.sh && chmod u+x setup.sh && ./setup.sh
+```    
 5. You'll be prompted to enter all the necessary details after the software updates and installations complete. If you are not using key-based SSH authentication, **you *must* pick a really strong password** for the login user when prompted, or your server *will* be compromised. 
 
     The part of your session where the script asks you questions should look something like this:
